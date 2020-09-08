@@ -13,9 +13,12 @@ namespace KeyConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Logger logger = new Logger();          
+            logger.Cycle();
 
+            Console.ReadKey();
         }
     }
 }
